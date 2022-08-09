@@ -1,11 +1,16 @@
 // uma função que retorna HTML - Um componente sem tem a extensão JSX
 // JSX = JavaScript +XML (HTML)
 
+import { Header } from './components/Header';
 import { Post } from './Post';
+
+import './global.css';
 
 export function App() {
   return (
     <div>
+        <Header />
+
        <Post 
           author="Karoline Fronza" 
           content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus accusantium error quasi quas tenetur exercitationem reiciendis recusandae consequuntur temporibus et repellendus veniam aspernatur quia, aperiam quos officia saepe iste quod" 

@@ -1,0 +1,10 @@
+.header{
+    background: var(--gray-800);
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem 0; /*1 =16px, de 1.25 sobram 0.25*/
+}
+
+.header img{
+    height: 2rem; /* simboliza 32px, caso o usuário nao diminua ou aumente o tamanho da fonte */
+}
