@@ -14,6 +14,29 @@
     display: flex;
     flex-direction: column; /*Para os dados fiquem um abaixo do outro*/
     align-items: center; /*Centraliza os dados*/
+
+    margin-top: calc(0px - 1.5rem - 6px); /*Começa em 0px e vai reduzir (1.5rem - 6px), sobrepoe a foto do perfil*/
+}
+
+.avatar{
+    box-sizing: initial; /*faz com que, quando é adicionado borda,margin... Isso ocupe o espaço a mais e nao esprema o elemento no container  */
+    width: 3rem;
+    height: 3rem;
+    border-radius: 8px;
+    border: 4px solid var(--gray-800);
+    outline: 2px solid var(--gray-500) ;
+}
+
+.profile strong{
+    margin-top: 1rem;
+    color: var(--gray-100);
+    line-height: 1.6;
+}
+
+.profile span{
+    font-size: 0.875rem;   /* 0.875*16 = 14px */ 
+    color: var(--gray-400);
+    line-height: 1.6;
 }
 
 /*o footer nao tem classe, então pode ser estilizado assim, pois vai ter apenas um footer na sideBar */
@@ -23,11 +46,11 @@
     padding: 1.5rem 2rem 2rem;
 }
 
-/*a é o link da imagem*/
+/*a é a tag do link da imagem*/
 .sidebar footer a {
     background: transparent;
-    color: var(--gray-500);
-    border: 1px solid var(--gray-500);
+    color: var(--green-500);
+    border: 1px solid var(--green-500);
     border-radius: 8px;
     height: 50px;
     padding: 0 1.5rem;
@@ -38,4 +61,14 @@
     display: flex;
     align-items: center;
     justify-content: center; 
+
+    gap: 0.06rem; /* Espaçamento de 12px entre o ícone e o texto */
+
+    transition: color 0.1s, background-color 0.1s; /*transição da cor do botão ao passar o mouse*/
 }
+
+.sidebar footer a:hover{
+    background: var(--green-500);
+    color: var(--white);
+}
+
